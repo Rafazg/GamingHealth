@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GamingHealth.Domain.Entities
 {
-    internal class Health
+    public class Health
     {
         public int PlayerId { get; set; }
         public decimal? SleepHours { get; set; }

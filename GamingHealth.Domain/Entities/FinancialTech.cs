@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GamingHealth.Domain.Entities
 {
-    internal class FinancialTech
+    public class FinancialTech
     {
         public int PlayerId { get; set; }
         public decimal? MicrotransactionsSpending { get; set; }

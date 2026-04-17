@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GamingHealth.Domain.Entities
 {
-    internal class GamingHabits
+    public class GamingHabits
     {
         public int PlayerId { get; set; }
         public decimal? DailyGamingHours { get; set; }

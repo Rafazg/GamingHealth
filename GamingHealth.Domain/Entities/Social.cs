@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GamingHealth.Domain.Entities
 {
-    internal class Social
+    public class Social
     {
         public int PlayerId { get; set; }
         public decimal? SocialInteractionScore { get; set; }

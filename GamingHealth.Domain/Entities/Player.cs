@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GamingHealth.Domain.Entities
 {
-    internal class Player
+    public class Player
     {
         public int PlayerId { get; set; }
         public int? Age { get; set; }
