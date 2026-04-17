@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="GamingHealth.API/GamingHealth.API.csproj" />
+  <Project Path="GamingHealth.Application/GamingHealth.Application.csproj" />
+  <Project Path="GamingHealth.Domain/GamingHealth.Domain.csproj" />
+  <Project Path="GamingHealth.Infrastructure/GamingHealth.Infrastructure.csproj" />
+</Solution>
