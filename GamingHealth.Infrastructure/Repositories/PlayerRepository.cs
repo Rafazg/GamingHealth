@@ -132,5 +132,19 @@ namespace GamingHealth.Infrastructure.Repositories
             using var connection = _context.CreateConnection();
             return await connection.ExecuteScalarAsync<int>(sql);
         }
+
+        public async Task UpdateAsync(Player player)
+        {
+            var sql = @"
+            UPDATE player
+            SET income = :Income
+            WHERE player_id = :PlayerId";
+            using var connection = _context.CreateConnection();
+            await connection.ExecuteAsync(sql, new
+            {
+                Income = player.Income,
+                PlayerId = player.PlayerId
+            });
+        }
     }
 }
