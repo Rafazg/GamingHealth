@@ -12,5 +12,6 @@ namespace GamingHealth.Domain.Interfaces
         Task<IEnumerable<Player>> GetAllAsync(int page, int pageSize);
         Task<Player?> GetByIdAsync(int playerId);
         Task<int> GetTotalCountAsync();
+        Task UpdateAsync(Player player);
     }
 }
