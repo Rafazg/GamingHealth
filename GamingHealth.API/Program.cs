@@ -3,6 +3,8 @@ using GamingHealth.Application.UseCases.ListPlayers;
 using GamingHealth.Infrastructure.Data;
 using GamingHealth.Infrastructure.Repositories;
 using GamingHealth.Domain.Interfaces;
+using GamingHealth.Domain.Entities;
+using GamingHealth.Application.UseCases.UpdatePlayerIncome;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,7 @@ builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
 // Use Cases
 builder.Services.AddScoped<ListPlayersUseCase>();
 builder.Services.AddScoped<GetPlayerByIdUseCase>();
+builder.Services.AddScoped<UpdatePlayerIncomeUseCase>();
 
 // Controllers e Swagger
 builder.Services.AddControllers();
